@@ -73,6 +73,10 @@ static const Key keys[] = {
 	/* kill */
 	{ MODKEY,                       XK_c,      killclient,     {0} },
 
+	/* volume (requires alsa-utils package) */
+	{ 0,                           0x1008ff11, spawn,          SHCMD("amixer -q sset Master 5%-") },
+	{ 0,                           0x1008ff13, spawn,          SHCMD("amixer -q sset Master 5%+") },
+
 	/* tags */
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
