@@ -77,6 +77,10 @@ static const Key keys[] = {
 	{ 0,                           0x1008ff11, spawn,          SHCMD("amixer -q sset Master 5%-") },
 	{ 0,                           0x1008ff13, spawn,          SHCMD("amixer -q sset Master 5%+") },
 
+	/* brightness (requires brightnessctl package) */
+	{ 0,                           0x1008ff03, spawn,          SHCMD("brightnessctl set 5%-") },
+	{ 0,                           0x1008ff02, spawn,          SHCMD("brightnessctl set +5%") },
+
 	/* tags */
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
