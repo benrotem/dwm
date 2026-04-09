@@ -73,6 +73,9 @@ static const Key keys[] = {
 	/* kill */
 	{ MODKEY,                       XK_c,      killclient,     {0} },
 
+	/* dwm */
+	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+
 	/*
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
@@ -103,7 +106,6 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	*/
 };
 
